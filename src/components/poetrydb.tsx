@@ -10,8 +10,7 @@ const AllPoemsDiv=styled.div`
 
 const SinglePoemDiv=styled.div`
     display: flex;
-    flex-direction: column;   
-    justify-content: center;
+    flex-direction: column;
     max-width: 30%;
     padding: 2%;
     margin: 1%;
@@ -30,7 +29,7 @@ export default function PoetryDB(props : { data:Poem[] } ){
                     <SinglePoemDiv key={`${poem.title}-${index}`}>
                         <h1>{poem.title}</h1>
                         <p>by {poem.author}</p>
-                        <div>{poem.lines.join('\n')}</div>
+                        <p>{poem.lines.join('\n')}</p>
                         <p>{poem.linecount} lines</p>
                     </SinglePoemDiv>
                 )

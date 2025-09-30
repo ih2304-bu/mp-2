@@ -4,8 +4,8 @@ import {useEffect, useState} from "react";
 import type {Poem} from "./interfaces/Poetry.ts";
 
 const ParentDiv=styled.div`
-    width: 80vw;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     border: 5px darkblue solid;
 `;
 
